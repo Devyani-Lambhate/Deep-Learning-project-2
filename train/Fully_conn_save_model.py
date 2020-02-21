@@ -18,11 +18,11 @@ xtest /= 255
 num_classes=10
 
 model=Sequential()
-model.add(Dense(512,input_shape=(28,28)))
+model.add(Dense(100,input_shape=(28,28)))
 model.add(Flatten())
 model.add(Activation('relu'))
 
-model.add(Dense(512))
+model.add(Dense(100))
 model.add(Activation('relu'))
 
 model.add(Dense(10))
